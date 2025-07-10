@@ -1,0 +1,56 @@
+.contenedor {
+  display: flex;
+  gap: 20px; 
+  
+}
+
+.columna {
+  flex: 1;
+  background: #f0f0f0;
+  padding: 20px;
+  border: 3px solid #ccc;
+}
+
+.plan {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      margin: 50px;
+    }
+    .plan.black {
+      background: #1c1c1c;
+      color: white;
+     margin: 50px;
+}
+
+    .plan h2 {
+      margin-top: 0;
+    }
+    .precio {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    .fidelidad {
+      font-size: 14px;
+      color: #888;
+    }
+    .beneficios {
+      margin: 15px 0;
+    }
+    .beneficios li {
+      margin-bottom: 8px;
+    }
+    .btn {
+      background: #ffc107;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom: 8px;
+      margin-top: 15px;
+    }
