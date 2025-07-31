@@ -1,110 +1,101 @@
-  * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f4f4;
-      color: #111;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #111;
-      color: white;
-      padding: 20px 40px;
-    }
-
-    header h1 {
-      font-size: 2rem;
-      color: #f2c200;
-    }
-
-    header p {
-      margin-top: 5px;
-      color: #ccc;
-    }
-
-    .contenedor {
-  display: flex;
-  gap: 20px; 
-  
+/* Fuente base */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff7e6;
 }
 
-.columna {
-  flex: 1;
-  background: #f0f0f0;
+/* Header */
+header {
+  background-color: #ffc107;
   padding: 20px;
-  border: 3px solid #ccc;
+  text-align: center;
+  color: black;
 }
 
+/* Contenedor de planes */
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Cada plan */
 .plan {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      padding: 20px;
-      width: 300px;
-      margin: 50px;
-    }
-    .plan.black {
-      background: #1c1c1c;
-      color: white;
-     margin: 50px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
 }
 
-    .plan h2 {
-      margin-top: 0;
-    }
-    .precio {
-      font-size: 24px;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-    .fidelidad {
-      font-size: 14px;
-      color: #888;
-    }
-    .beneficios {
-      margin: 15px 0;
-    }
-    .beneficios li {
-      margin-bottom: 8px;
-    }
-    .btn {
-      background: #ffc107;
-      border: none;
-      border-radius: 20px;
-      padding: 10px;
-      font-weight: bold;
-      cursor: pointer;
-      width: 100%;
-      margin-bottom: 8px;
-      margin-top: 15px;
-    }
+.plan.black {
+  background: #1c1c1c;
+  color: white;
+}
+
+/* Precio y fidelidad */
+.precio {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.fidelidad {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Botón */
+.btn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  background: #ffc107;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Sucursales */
 .sucursales {
-  display: grid;
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .sucursal {
-  background-color: #2b2b2b;
-  padding: 1rem;
-  border-radius: 1rem;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 400px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+  padding: 15px;
+  border-radius: 10px;
 }
 
-.sucursal:hover {
-  transform: scale(1.02);
-}
+/* Responsive para pantallas chicas */
+@media screen and (max-width: 768px) {
+  .plan {
+    max-width: 100%;
+  }
 
-.sucursal h2 {
-  color: #fdd835;
-  margin-bottom: 1rem;
-  text-align: center;
+  .sucursal {
+    max-width: 100%;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
 }
